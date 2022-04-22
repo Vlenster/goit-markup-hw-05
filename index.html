@@ -23,7 +23,7 @@
         <nav class="header-nav">
         <a href="index.html"  class="logo link"><p lang="en"><span class="logoweb">Web</span><span class="logostudio">Studio</span></p></a>
         <ul class="header-list list">
-        <li class="header-list-item"><a class="header-list-link link" href="index.html">  Студия </a></li>
+        <li class="header-list-item"><a class="header-list-link active link" href="index.html">  Студия </a></li>
         <li class="header-list-item"><a class="header-list-link link" href="portfolio.html"> Портфолио</a></li>
         <li  class="header-list-item"><a class="header-list-link link" href=""> Контакты</a> </li>
         </ul>
@@ -44,7 +44,7 @@
     <section class="hero">
         <div class="container">
          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-         <button type="button" class="hero-btn button">Заказать услугу</button>
+         <button type="button" class="hero-btn button" data-modal-open>Заказать услугу</button>
         </div>
 
         </section>
@@ -92,9 +92,18 @@
         <div class="container">
         <h2 class="product-title">Чем мы занимаемся</h2>
         <ul class="product-list list">
-        <li class="product-item"><img src="images/img1.jpg" alt="Верстка" width="370" height="294" /></li>
-        <li class="product-item"><img src="images/img2.jpg" alt="Моб приложение" width="370" height="294" /></li>
-        <li class="product-item"><img src="images/img3.jpg" alt="Дизайн" width="370" height="294" /></li>
+        <li class="product-item">
+            <img src="images/img1.jpg" alt="Верстка" width="370" height="294" />
+            <p class="product-text">Десктопные приложения</p>
+        </li>
+        <li class="product-item">
+            <img src="images/img2.jpg" alt="Моб приложение" width="370" height="294" />
+            <p class="product-text">Мобильные приложения</p>
+        </li>
+        <li class="product-item">
+            <img src="images/img3.jpg" alt="Дизайн" width="370" height="294" />
+            <p class="product-text">Дизайнерские решения</p>
+        </li>
         </ul>
         </div>
     </section>
@@ -280,9 +289,18 @@
     </ul>
     </div>
 
-    </div>
-    
+    </div> 
 </footer>
 
+
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="btn-modal-close button" data-modal-close><svg class="icon-close" width="17" height="17">
+            <use href="./images/icon/symbol-defs.svg#icon-close-black-18dp-2-1"></use>
+        </svg></button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
